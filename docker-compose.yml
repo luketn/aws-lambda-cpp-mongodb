@@ -2,12 +2,12 @@ version: "3.8"
 
 services:
     client:
-        image: aws-lambda-cpp
+        image: aws-lambda-cpp-mongodb
         environment:
             - DEBUG=DOTS
             - AWS_LAMBDA_RUNTIME_API=server:3777
     server:
-        image: aws-lambda-cpp
+        image: aws-lambda-cpp-mongodb
         entrypoint: /app/server
         ports:
             - "3777:3777"
