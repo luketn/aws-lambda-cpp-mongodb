@@ -12,7 +12,7 @@
 #
 # Happy Coding!
 
-service: c-test
+service: c-test-mongo
 # app and org for use with dashboard.serverless.com
 #app: your-app-name
 #org: your-org-name
@@ -58,13 +58,13 @@ package:
 
 functions:
   hello:
-    handler: handler.hello
+    handler: handler.mongo
 #    The following are a few example events you can configure
 #    NOTE: Please make sure to change your handler code to work with those events
 #    Check the event documentation for details
     events:
       - httpApi:
-          path: /cpp/hello
+          path: /cpp/mongo
           method: get
 #      - websocket: $connect
 #      - s3: ${env:BUCKET}
