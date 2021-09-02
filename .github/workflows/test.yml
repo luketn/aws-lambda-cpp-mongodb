@@ -1,0 +1,15 @@
+name: Test
+
+on: [push, pull_request]
+
+jobs: 
+  test:
+    name: Build and test the Lambda
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Build MongoDB CPP AWS Lambda
+        run: ./build.sh
+      - name: Test
+        run: echo "TODO"
