@@ -64,7 +64,7 @@ functions:
 #    Check the event documentation for details
     events:
       - httpApi:
-          path: /cpp/mongo
+          path: /cpp/mongodb
           method: get
 #      - websocket: $connect
 #      - s3: ${env:BUCKET}

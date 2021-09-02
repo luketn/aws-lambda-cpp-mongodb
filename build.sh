@@ -1,3 +1,7 @@
+#/bin/bash
+
+set -e
+
 docker build --platform linux/amd64 -t aws-lambda-cpp-mongodb .
 docker create -ti --name build-the-program aws-lambda-cpp /bin/bash
 mkdir -p bin
