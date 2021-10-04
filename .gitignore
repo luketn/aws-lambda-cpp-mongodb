@@ -2,3 +2,5 @@
 bootstrap
 /.serverless/
 /cmake-build-debug/
+/server
+/bootstrap.zip

@@ -44,7 +44,7 @@ int main() {
             }
 
             std::string responseId = res->get_header_value("Lambda-Runtime-Aws-Request-Id");
-            std::string response = "{\"result\": \"If you see this then the mongodb lambda works after ci/cd!\"}";
+            std::string response = "{\"result\": \"If you see this then the mongodb lambda works after ci/cd (3)!\"}";
             cli.Post(("/2018-06-01/runtime/invocation/" + responseId + "/response").c_str(), response,
                      "application/json");
         } else {
